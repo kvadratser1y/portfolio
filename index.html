@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kvadratsites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.ibb.co/87RJs1v/A4-DBC8-F5-0-EEE-4-BB1-95-C5-4-A9-B4865448-D.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#contact">Покупка</a></li>
+            </ul>
+        </nav>
+        <!-- Иконка меню для мобильной версии -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <img src="https://cdn-icons-png.flaticon.com/128/3917/3917215.png" alt="Menu Icon">
+        </div>
+    </header>
+
+    <!-- Главная секция -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Сайты kvadratsites.</h1>
+            <p>Создайте сайт своей мечты благодаря нашему сервису.</p>
+            <button onclick="scrollToSection('contact')">Приобрести сайт</button>
+        </div>
+    </section>
+
+    <!-- Секция "Услуги" -->
+    <section id="services">
+        <h2>Услуги</h2>
+        <div class="service">
+            <img src="https://via.placeholder.com/300" alt="Разовая сессия">
+            <h3>Пакет "Стандарт"</h3>
+            <p>Выполнение сайта с использованием современного языка програмирования для веб страниц HTML5 и использование CSS для стилистики.</p>
+            <p>Поддержка от менеджера при проблемах с сайтом.</p>
+            <p>Стоимость = 25$ / 1000 UAH</p>
+        </div>
+        <div class="service">
+            <img src="https://via.placeholder.com/300" alt="5 сессий">
+            <h3>Пакет "Проффесиональный"</h3>
+            <p>Привелегии пакета "Стандарт"</p>
+            <p>Встроенный домен.</p>
+            <p>Инструктаж по сайту сразу в папке.</p>
+            <p>Стоимость = 50$ / 2000 UAH</p>
+        </div>
+        <div class="service">
+            <img src="https://via.placeholder.com/300" alt="8 сессий">
+            <h3>Пакет "VIP"</h3>
+            <p>Привелегии пакета "Проффесиональный"</p>
+            <p>Поддержка нескольких страниц сайта.</p>
+            <p>Использование JavaScript для специальных механик.</p>
+            <p>Стоимость = 100$ / 4000 UAH</p>
+        </div>
+        <div class="service">
+            <img src="https://via.placeholder.com/300" alt="8 сессий">
+            <h3>Пакет "App"</h3>
+            <p>Привелегии пакета "Проффесиональный"</p>
+            <p>Создание Web-приложения.</p>
+            <p>Выбор языков сайта/приложения.</p>
+            <p>Стоимость = 200$ / 8000 UAH</p>
+        </div>
+    </section>
+
+    <!-- Секция "Обо мне" -->
+    <section id="about">
+        <h2>Обо мне</h2>
+        <div class="about-content">
+            <img src="images/about.jpg" alt="Обо мне">
+            <div class="about-text">
+                <p>[Краткая биография, опыт и достижения]</p>
+                <p>Я специализируюсь на ... [детали]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Отзывы" -->
+    <section id="testimonials">
+        <h2>Отзывы</h2>
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/100" alt="Клиент 1">
+            <p>★★★★★</p>
+            <p>- Отличный сайт, всем рекомендую!</p>
+            <p><strong><i>Клиент 1</i></strong></p>
+        </div>
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/100" alt="Клиент 2">
+            <p>★★★★★</p>
+            <p>- Сайт помог развится моему бизнесу!</p>
+            <p><strong><i>Клиент 2</i></strong></p>
+        </div>
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/100" alt="Клиент 3">
+            <p>★★★★★</p>
+            <p>- Очень профессионально и полезно, рекомендую всем!</p>
+            <p><strong><i>Клиент 3</i></strong></p>
+        </div>
+    </section>
+
+    <!-- Секция "Контакты" -->
+    <section id="contact">
+        <h2>Приобрести сайт</h2>
+        <!-- modify this form HTML and place wherever you want your form -->
+<form action="https://formsubmit.co/kvadratseriy@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Ваше имя" required>
+    <input type="email" name="email" placeholder="Ваш email" required>
+    
+    <select name="package" required>
+        <option value="">Выберите пакет</option>
+        <option value="standard">Пакет "Стандарт"</option>
+        <option value="professional">Пакет "Профессиональный"</option>
+        <option value="vip">Пакет "VIP"</option>
+        <option value="app">Пакет "App"</option>
+    </select>
+
+    <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+    
+    <!-- Скрытые поля для настройки FormSubmit -->
+    <input type="hidden" name="_subject" value="Новая заявка с сайта">
+    <input type="hidden" name="_captcha" value="false">
+    
+    <button type="submit">Отправить</button>
+</form>
+
+<div id="form-messages"></div>
+        <footer><p><i>&copy; 2024 kvadratsites. Все права защищены.</i></p>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
